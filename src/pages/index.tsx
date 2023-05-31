@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import { Stack } from "@mui/material";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +16,7 @@ export default function Home() {
       </Head>
       <main>
         <div>
-          <p>asd</p>
+          <Stack sx={{ color: "primary.main" }}>asd</Stack>
         </div>
       </main>
     </>

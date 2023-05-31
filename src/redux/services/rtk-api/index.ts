@@ -1,4 +1,5 @@
-import { logout } from "@store/reducers/auth/auth.action";
+import { DEV_API } from "@/api";
+import { logout } from "@/redux/features/auth/auth.action";
 import {
   BaseQueryFn,
   FetchArgs,
@@ -6,7 +7,6 @@ import {
   FetchBaseQueryError,
   FetchBaseQueryMeta,
 } from "@reduxjs/toolkit/query/react";
-import { DEV_API } from "@api/index";
 
 export const baseQuery = fetchBaseQuery({
   baseUrl: DEV_API,
